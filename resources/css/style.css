@@ -1,9 +1,42 @@
 html {
   font-size: 16px;
+  background-color: white;
+}
+body{
+  margin: 0 auto;
+  width: 960px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .mobile {
   display: none;
+}
+
+.container {
+  display: flex;
+  height: auto;
+}
+
+.feature {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.feature img{
+  width: 100%;
 }
 
 @media only screen and (max-width:480px){
@@ -13,4 +46,93 @@ html {
   .desktop {
     display: none;
   }
+}
+
+/* header */
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+/* banner */
+
+.banner {
+  align-items: center;
+  background-color: lightgrey;
+}
+
+/* information section */
+
+.items{
+  width: 40%;
+  padding-top: 32px;
+}
+
+.item .first img{
+  margin-top: 0px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item img {
+  width: 35%;
+  margin: 16px;
+}
+
+/* courses section */
+
+.curriculum {
+  background-color: lightgrey;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.curriculum h2, .thesis h2 {
+  text-align: center;
+}
+
+.courses {
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 16px 56px 16px 56px;
+}
+
+.course {
+  display: inline-block;
+  background-color: white;
+  width: 30%;
+  height: auto;
+  margin: 16px;
+}
+
+.course img{
+  width: 100%;
+}
+
+/* thesis exhibit section */
+
+video {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  align-items: center;
+  justify-content: space-between;
 }
