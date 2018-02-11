@@ -2,10 +2,12 @@ html {
   font-size: 16px;
   background-color: white;
 }
+
 body{
   margin: 0 auto;
   width: 960px;
 }
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -95,29 +97,38 @@ nav ul{
 /* courses section */
 
 .curriculum {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: lightgrey;
-  width: 100%;
-  padding-top: 32px;
+  width: auto;
+  /* padding-top: 32px; */
   padding-bottom: 16px;
+  padding-left: 56px;
+  padding-right: 56px;
 }
 
 .curriculum h2, .thesis h2 {
   text-align: center;
+  padding: 2rem 0 1rem 0;
 }
 
 .courses {
-  justify-content: space-around;
-  width: 100%;
   flex-wrap: wrap;
-  margin: 16px 56px 16px 56px;
+  /*justify-content: space-around;*/
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  padding: 0;
 }
 
 .course {
-  display: inline-block;
+  flex-direction: column;
   background-color: white;
   width: 30%;
   height: auto;
-  margin: 16px;
+  margin: 0.5rem 0.5rem;
+  /* margin: 16px;*/
 }
 
 .course img{
