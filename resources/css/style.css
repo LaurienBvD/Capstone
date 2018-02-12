@@ -8,8 +8,12 @@ body{
   width: 960px;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Vollkorn', serif;
+}
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -23,6 +27,15 @@ h3 {
   font-weight: bold;
 }
 
+p, span {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3rem;
+}
+
+a {
+  color: blue;
+}
+
 .mobile {
   display: none;
 }
@@ -34,54 +47,103 @@ h3 {
 
 .feature {
   width: 60%;
-  margin: 32px 24px;
+  margin: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .feature img{
   width: 100%;
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width: 480px){
   .mobile {
-    display:block;
+    display: flex;
   }
   .desktop {
-    display: none;
+    display:none;
   }
 }
-
 /* header */
 
 header {
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0rem;
+  background-color: #337DBF;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 1.5rem;
+  height: 2rem;
+}
+
+.logo span{
+  font-family: 'Vollkorn', serif;
+}
+
+.academy {
+  color: lightgrey;
 }
 
 nav ul{
   display: flex;
 }
 
+nav li {
+  padding: 0rem 0.5rem;
+  color: lightgrey;
+}
+
+nav.desktop {
+  margin-right: 1rem;
+}
+
 /* banner */
 
 .banner {
   align-items: center;
-  background-color: lightgrey;
+  background-color: #7EB0DD;
+  padding-top: 1rem;
+}
+
+.banner p {
+  padding: 1rem 0rem;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-right: 10%;
+}
+
+.btn {
+  background-color: #084E8D;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  color: white;
 }
 
 /* information section */
+.information {
+  padding-top: 1rem;
+  background-color: #FFF;
+}
+
+.feature h2 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.name {
+  padding-top: 1.5rem;
+  color: #084E8D;
+  font-size: 0.8rem;
+  font-style: italic;
+}
 
 .items{
   width: 40%;
-  padding-top: 32px;
-}
-
-.item .first img{
-  margin-top: 0px;
 }
 
 .item {
@@ -94,16 +156,28 @@ nav ul{
   margin: 16px;
 }
 
+.item:hover {
+  background-color: #5393CC;
+  opacity: 0.85;
+}
+
+.text {
+  padding-right: 1rem;
+}
+
+.text p {
+  padding: 0.5rem 0rem;
+}
 /* courses section */
 
 .curriculum {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: lightgrey;
+  background-color: #7EB0DD;
   width: auto;
   /* padding-top: 32px; */
-  padding-bottom: 16px;
+  padding-bottom: 1.5rem;
   padding-left: 56px;
   padding-right: 56px;
 }
@@ -128,6 +202,7 @@ nav ul{
   width: 30%;
   height: auto;
   margin: 0.5rem 0.5rem;
+  box-shadow: 0 4px 6px 1px grey;
   /* margin: 16px;*/
 }
 
@@ -135,10 +210,27 @@ nav ul{
   width: 100%;
 }
 
+.course h3 {
+  margin: 1rem 0 0 1rem;
+}
+
+.course .content {
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+.course .content h4{
+  padding: 0.5rem 0rem;
+}
+
+
 /* thesis exhibit section */
 
 video {
   width: 100%;
+}
+
+.feature h3 {
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 /* footer */
@@ -146,4 +238,6 @@ video {
 footer {
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 0 4rem 1.5rem;
+  background-color: #337DBF;
 }
